@@ -1,0 +1,39 @@
+Certainly! Below is a `tsconfig.json` file tailored for a React project using TypeScript. This configuration is suitable for building a luxury dark-themed website like "HouseIL" with a focus on high-end design.
+
+```json
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+}
+```
+
+### Explanation of Key Options:
+- **target**: Specifies the ECMAScript target version. `es6` is a good choice for modern React applications.
+- **module**: CommonJS is used for Node.js compatibility.
+- **lib**: Includes necessary libraries for DOM manipulation and modern JavaScript features.
+- **strict**: Enables all strict type-checking options.
+- **jsx**: Set to `react-jsx` for using the new JSX transform introduced in React 17.
+- **baseUrl** and **paths**: Helps in setting up absolute imports for better organization of your components, styles, and utilities.
+
+This configuration should help you get started with your luxury dark-themed AirBNB website project using React and TypeScript.
